@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import Nav from './Nav';
+import TimeBar from './TimeBar';
 
 const Landing = styled.div`
-    height: 100vh;
-    width: 100vw;
     background: black;
     color: white;
     padding-top: 15%;
@@ -19,33 +19,18 @@ const LandingBody = styled.nav`
     font-size: 6vw;
     text-decoration: underline;
     text-align: center;
-`
 
-const Nav = styled.nav`
-    font-size: 12px;
-    list-style-type: none;
-    position: fixed;
-    right: 1.5%;
-    top: 2%;
-    text-align: right;
-    line-height: 19px;
+    a:visited {
+        color: inherit; 
+        text-decoration: none;
+    }
 `
-function Product({ match }: any) {
-    return <h2>This is a page for product with ID: {match.params.id} </h2>;
-}
 
 function LandingPage() {
     return (
-            <Landing>
-            <Nav>
-                <ul>
-                    <li>WORK</li>
-                    <li>ABOUT</li>
-                    <li>JOBS</li>
-                    <li>TEAM</li>
-                    <li>CONTACT</li>
-                </ul>
-            </Nav>
+        <Landing>
+            <Nav />
+            <TimeBar />
             <LandingBody>
                 <ul>
                     <li><Link to="/page/1">LANDING PAGE</Link></li>
