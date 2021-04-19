@@ -4,11 +4,10 @@ import Nav from './Nav';
 import TimeBar from './TimeBar';
 
 const Contact = styled.div`
-    height: 100vh;
     width: 100vw;
-    background: black;
+    height: 100vh;
+    background-color: black;
     color: white;
-    
     ul {
         list-style-type: none;
     }
@@ -16,7 +15,16 @@ const Contact = styled.div`
 
 const ContactBody = styled.div`
     display: flex;
+    justify-content: space-around;
+    position: relative;
+    padding-top: 30px;
+`
 
+const ContactDetails = styled.div`
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 `
 
 function ContactPage() {
@@ -25,13 +33,13 @@ function ContactPage() {
             <Nav />
             <TimeBar />
             <ContactBody>
-                <div>
+                <ContactDetails>
                     <p>AKL, New Zealand</p>
                     <p>wannachaiburke@gmail.com</p>
-                    <p>+64 21 2960 652</p>
-                </div>
+                    <p>(+64) 21 2960 652</p>
+                </ContactDetails>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="stock"/>
+                    <img style={{height: '870px'}} src="https://images.unsplash.com/photo-1507097634215-e82e6b518529?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="stock"/>
                 </div>
             </ContactBody>
         </Contact>

@@ -5,6 +5,8 @@ import Nav from './Nav';
 import TimeBar from './TimeBar';
 
 const Landing = styled.div`
+    width: 100vw; 
+    height: 100vh;
     background: black;
     color: white;
     padding-top: 15%;
@@ -20,7 +22,7 @@ const LandingBody = styled.nav`
     text-decoration: underline;
     text-align: center;
 
-    a:visited {
+    a, a:visited {
         color: inherit; 
         text-decoration: none;
     }
@@ -33,7 +35,7 @@ function LandingPage() {
             <TimeBar />
             <LandingBody>
                 <ul>
-                    <li><Link to="/page/1">LANDING PAGE</Link></li>
+                    <li><Link to="/page/Te-Motu">Te Motu</Link></li>
                     <li>LANDING PAGE LANDING PAGE</li>
                     <li>LANDING PAGE LANDING</li>
                     <li>LANDING PAGE</li>

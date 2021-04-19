@@ -11,6 +11,7 @@ const NavigationBody = styled.nav`
     text-align: right;
     line-height: 18px;
     font-family: 'Nunito';
+    z-index: 10000;
 
     a, a:visited, a:active {
         color: inherit;
