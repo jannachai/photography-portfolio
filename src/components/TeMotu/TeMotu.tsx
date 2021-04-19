@@ -6,6 +6,7 @@ import titlePhoto from './Photos/IMG_0963.jpg';
 import { Parallax } from 'react-parallax';
 import { HiArrowNarrowDown } from 'react-icons/hi';
 import { bounce } from 'react-animations';
+import { Helmet } from 'react-helmet';
 
 const TeMotuPage = styled.div`
     width: 100vw; 
@@ -33,8 +34,8 @@ const Container = () => {
         <Parallax
             blur={0}
             bgImage={titlePhoto}
-            bgImageAlt="the dog"
-            strength={200}
+            bgImageAlt="the girls"
+            strength={300}
         >
             <div style={{ height: '870px', width: '80vw', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end'}}>
                 <div style={{ width: '100%', height: '40%', display: "flex", flexDirection: 'column', alignItems: 'center', justifyContent:'space-between'}}>
@@ -49,6 +50,9 @@ const Container = () => {
 function TeMotu() {
     return (
         <TeMotuPage>
+            <Helmet>
+                <title>Te Motu - Wannachai Burke</title>
+            </Helmet>
             <Nav />
             <TimeBar />
             {Container()}

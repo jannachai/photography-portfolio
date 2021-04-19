@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Nav from './Nav';
 import TimeBar from './TimeBar';
+import { Helmet } from 'react-helmet';
 
 const Contact = styled.div`
     width: 100vw;
@@ -30,6 +31,9 @@ const ContactDetails = styled.div`
 function ContactPage() {
     return (
         <Contact>
+            <Helmet>
+                <title>Contact - Wannachai Burke</title>
+            </Helmet>
             <Nav />
             <TimeBar />
             <ContactBody>
