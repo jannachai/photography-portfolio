@@ -18,7 +18,7 @@ function TitlePhoto(props) {
         >
             <div style={{ height: '870px', width: '80vw', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end'}}>
                 <div style={{ width: '100%', height: '40%', display: "flex", flexDirection: 'column', alignItems: 'center', justifyContent:'space-between'}}>
-                    <div style={{color: "white"}}>{props.title}</div>
+                    <div style={{color: "white", fontWeight: "bold"}}>{props.title}</div>
                     <ArrowContainer><HiArrowNarrowDown style={{height: '20px', width: '20px', paddingBottom: '50px', color: "white"}} /></ArrowContainer>
                 </div>
             </div>

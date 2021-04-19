@@ -41,7 +41,7 @@ function LandingPage() {
             <LandingBody>
                 <ul>
                     <li><Link to="/Te-Motu">Te Motu</Link></li>
-                    <li>Sweet Red Strawberries</li>
+                    <li><Link to="/Sweet-Red">Sweet Red Strawberries</Link></li>
                     <li>The Glass Goose</li>
                     <li>Blue Springs</li>
                     <li>SEA LIFE Sydney</li>
