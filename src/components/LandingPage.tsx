@@ -7,10 +7,11 @@ import { Helmet } from 'react-helmet';
 
 const Landing = styled.div`
     width: 100vw; 
-    height: 100vh;
+    height: fit-content;
     background: black;
     color: white;
     padding-top: 15%;
+    padding-bottom: 10%;
     
     ul {
         list-style-type: none;
@@ -40,9 +41,11 @@ function LandingPage() {
             <LandingBody>
                 <ul>
                     <li><Link to="/Te-Motu">Te Motu</Link></li>
-                    <li>LANDING PAGE LANDING PAGE</li>
-                    <li>LANDING PAGE LANDING</li>
-                    <li>LANDING PAGE</li>
+                    <li>Sweet Red Strawberries</li>
+                    <li>The Glass Goose</li>
+                    <li>Blue Springs</li>
+                    <li>SEA LIFE Sydney</li>
+                    <li>Blue Mountains</li>
                 </ul>
             </LandingBody>
         </Landing>
