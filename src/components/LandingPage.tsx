@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import Nav from './Nav';
@@ -31,6 +31,10 @@ const LandingBody = styled.nav`
 `
 
 function LandingPage() {
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
+    
     return (
         <Landing>
             <Helmet>
@@ -41,6 +45,7 @@ function LandingPage() {
             <LandingBody>
                 <ul>
                     <li><Link to="/Te-Motu">Te Motu</Link></li>
+                    <li><Link to="">Tongariro National Park</Link></li>
                     <li><Link to="/Sweet-Red">Sweet Red Strawberries</Link></li>
                     <li>The Glass Goose</li>
                     <li>Blue Springs</li>

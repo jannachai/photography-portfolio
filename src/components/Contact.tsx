@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Nav from './Nav';
 import TimeBar from './TimeBar';
@@ -29,6 +29,10 @@ const ContactDetails = styled.div`
 `
 
 function ContactPage() {
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
+    
     return (
         <Contact>
             <Helmet>
