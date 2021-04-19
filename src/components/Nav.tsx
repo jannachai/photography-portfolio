@@ -24,9 +24,9 @@ function Nav() {
         <NavigationBody>
             <ul>
                 <li><NavLink activeStyle={{fontWeight: 'bold'}} exact to="/">HOME</NavLink></li>
-                <li><NavLink activeStyle={{fontWeight: 'bold'}} to="/page/about">ABOUT</NavLink></li>
-                <li><NavLink activeStyle={{fontWeight: 'bold'}} to="/page/resume">RESUME</NavLink></li>
-                <li><NavLink activeStyle={{fontWeight: 'bold'}} to="/page/contact">CONTACT</NavLink></li>
+                <li><NavLink activeStyle={{fontWeight: 'bold'}} to="/about">ABOUT</NavLink></li>
+                <li><NavLink activeStyle={{fontWeight: 'bold'}} to="/resume">RESUME</NavLink></li>
+                <li><NavLink activeStyle={{fontWeight: 'bold'}} to="/contact">CONTACT</NavLink></li>
             </ul>
         </NavigationBody>
     )

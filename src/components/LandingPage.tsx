@@ -35,7 +35,7 @@ function LandingPage() {
             <TimeBar />
             <LandingBody>
                 <ul>
-                    <li><Link to="/page/Te-Motu">Te Motu</Link></li>
+                    <li><Link to="/Te-Motu">Te Motu</Link></li>
                     <li>LANDING PAGE LANDING PAGE</li>
                     <li>LANDING PAGE LANDING</li>
                     <li>LANDING PAGE</li>

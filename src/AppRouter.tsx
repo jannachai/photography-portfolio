@@ -8,8 +8,8 @@ function AppRouter() {
     return (
         <Switch>
             <Route exact path="/" component={LandingPage} />
-            <Route path="/page/Te-Motu" component={TeMotu} />
-            <Route path="/page/contact" component={ContactPage} />
+            <Route path="/Te-Motu" component={TeMotu} />
+            <Route path="/contact" component={ContactPage} />
             <Redirect to="/" />
         </Switch>
     )
