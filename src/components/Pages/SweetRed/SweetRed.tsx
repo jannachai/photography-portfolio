@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Nav from '../../Nav';
 import TimeBar from '../../TimeBar';
-import TitlePhoto from '../../TitlePhoto';
+import TitlePhoto from '../../TitlePhoto/TitlePhoto';
 import titlePhoto from './Photos/IMG_0821.jpg';
 import { Helmet } from 'react-helmet';
 
