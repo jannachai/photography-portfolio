@@ -10,6 +10,7 @@ import Luwi3 from './Photos/IMG_0943.jpg';
 import { Helmet } from 'react-helmet';
 import TitleDetails from '../../TitleDetails/TitleDetails';
 import EventSummary from '../../EventSummary/EventSummary';
+import PhotoLayout from '../../PhotoLayout/PhotoLayout';
 
 const TeMotuPage = styled.div`
     width: 100vw; 
@@ -21,19 +22,10 @@ const TeMotuPage = styled.div`
     align-items: center;
     padding-top: 30px;
     font-family: 'Nunito';
-    
+    padding-bottom: 200px;
     ul {
         list-style-type: none;
     }
-`
-
-const StyledContainer = styled.div`
-    min-height: 700px;
-    background-color: white;
-    width: 1535px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 `
 
 function TeMotu() {
@@ -68,11 +60,14 @@ function TeMotu() {
                 
                 `}
             />
-            <StyledContainer>
-                <img src={Luwi1} alt="luwi-1" style={{height: 550}}/>
-                <img src={Luwi2} alt="luwi-2" style={{height: 550}}/>
-                <img src={Luwi3} alt="luwi-3" style={{height: 550}}/>
-            </StyledContainer>
+            <PhotoLayout 
+                photos={[
+                    Luwi1,
+                    Luwi2,
+                    Luwi3
+                ]}
+                layoutName="3-long-mid"
+            />
         </TeMotuPage>
     )
 }
