@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
-    min-height: 870px;
-    width: 80vw;
+    max-height: 870px;
+    width: 78vw;
     background-color: white;
+    margin-bottom: 30px;
+    overflow: hidden;
 `
 
 export const LayoutWrapper = styled.div`

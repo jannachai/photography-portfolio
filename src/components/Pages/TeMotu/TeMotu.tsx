@@ -68,6 +68,10 @@ function TeMotu() {
                 ]}
                 layoutName="3-long-mid"
             />
+            <PhotoLayout
+                photos={[titlePhoto]}
+                layoutName="single"
+            />
         </TeMotuPage>
     )
 }
