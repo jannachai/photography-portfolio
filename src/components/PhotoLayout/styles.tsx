@@ -15,7 +15,7 @@ export const MainContainer = styled.div`
     };
 
     .slideInLeft-animation {
-        animation: 1.5s ${slideInLeftAnimation};
+        animation: 2s ${slideInLeftAnimation};
     };
 `
 
