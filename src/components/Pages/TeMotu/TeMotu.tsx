@@ -33,6 +33,28 @@ function TeMotu() {
         window.scrollTo(0,0)
     }, [])
 
+    window.onload = function() {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    console.log(entry.target.className)
+                    if (entry.target.className.includes("single")) {
+                        console.log("HIT")
+                        entry.target.classList.add("slideInUp-animation");
+                    } 
+                    
+                    if (entry.target.className.includes("3-long-mid")) {
+                        entry.target.classList.add("slideInLeft-animation");
+                    }
+                }
+            })
+        });
+
+        const photos = document.querySelectorAll('.photos');
+        photos.forEach(photo => observer.observe(photo));
+    }
+
+
     const titleDetails = {
         persons: 'Aydriannah, Jemima, Luwi',
         location: 'Te Motu, Waiheke',
