@@ -51,6 +51,7 @@ function LandingPage() {
                     <li>Blue Springs</li>
                     <li>SEA LIFE Sydney</li>
                     <li>Blue Mountains</li>
+                    <li>Wellington Botanical Gardens</li>
                     <li>ZEALANDIA</li>
                 </ul>
             </LandingBody>

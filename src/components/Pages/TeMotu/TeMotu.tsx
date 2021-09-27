@@ -4,6 +4,7 @@ import Nav from '../../Nav';
 import TimeBar from '../../TimeBar';
 import TitlePhoto from '../../TitlePhoto/TitlePhoto';
 import titlePhoto from './Photos/IMG_0963.jpg';
+import GroupPhoto from './Photos/IMG_0962.jpg';
 import Luwi1 from './Photos/IMG_0937-2.jpg';
 import Luwi2 from './Photos/IMG_0938.jpg';
 import Luwi3 from './Photos/IMG_0943.jpg';
@@ -91,7 +92,7 @@ function TeMotu() {
                 layoutName="3-long-mid"
             />
             <PhotoLayout
-                photos={[titlePhoto]}
+                photos={[GroupPhoto]}
                 layoutName="single"
             />
             <PhotoLayout
