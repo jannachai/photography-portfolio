@@ -99,6 +99,12 @@ function TeMotu() {
                     Luwi2]}
                 layoutName="2-portrait"
             />
+            <PhotoLayout
+                photos={[Luwi1,
+                    Luwi2]}
+                layoutName="2-portrait-border"
+                hover={["Hover 1", "Hover 2"]}
+            />
         </TeMotuPage>
     )
 }

@@ -26,3 +26,23 @@ export const LayoutWrapper = styled.div`
     background-color:white;
 
 `
+
+export const TwoPortraitBorderContainer = styled.div`
+    display: flex;
+    padding: 120px;
+    background-color: white;
+    justify-content: space-around;
+`;
+
+export const TwoPortraitBorderPhoto = styled.div`
+    width: 32%;
+    overflow:hidden;
+    img {
+        width: 100%;
+    }
+
+    &:hover .overlay {
+        opacity: 1;
+    }
+
+`
