@@ -94,6 +94,11 @@ function TeMotu() {
                 photos={[titlePhoto]}
                 layoutName="single"
             />
+            <PhotoLayout
+                photos={[Luwi1,
+                    Luwi2]}
+                layoutName="2-portrait"
+            />
         </TeMotuPage>
     )
 }
